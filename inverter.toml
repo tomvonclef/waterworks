@@ -1,0 +1,44 @@
+[[nodes]]
+id = "spring1"
+type = "spring"
+x = 150
+y = 0
+
+[[nodes]]
+id = "jKey"
+type = "key"
+x = 0
+y = 150
+bindKey = "j"
+
+[[nodes]]
+id = "pipe1"
+type = "pipe"
+input = "spring1"
+
+[[nodes]]
+id = "pump1"
+type = "pump"
+input = "pipe1"
+x = 150
+y = 150
+
+[[nodes]]
+id = "pipe2"
+type = "pipe"
+input = "pipe1"
+junctionDistance = 100
+
+[[nodes]]
+id = "balloon1"
+type = "balloon"
+input = "pipe2"
+x = 200
+y = 100
+
+[[nodes]]
+id = "sink1"
+type = "sink"
+input = "pump1"
+x = 150
+y = 200
